@@ -1,0 +1,259 @@
+:root {
+    /* CSS HEX */
+    --beige: #F7F9E6ff;
+    --charcoal: #494F5Eff;
+    --coffee: #7D5742ff;
+    --coffee-with-cream: rgb(246, 208, 176);
+    --rich-black: #0B091Bff;
+    --battleship-gray: #7F888Bff;
+    --battleship-gray-transparent: #7F888B99;
+    --coffee-transparent: #7D5742aa;
+    --rich-black-shadow: #0B091B33;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+    background-color: var(--beige);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    padding: 0px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("assets/lithiasprings.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100%;
+    height: 343px;
+    justify-content: center;
+    align-items: center;    
+}
+
+header > h1 {
+    background-color: rgba(45, 65, 50, 0.758);
+    color: var(--beige);
+    padding: 10px;    
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px var(--rich-black);
+
+}
+
+header > h2 {
+    background-color: var(--coffee-transparent);
+    color: var(--beige);
+    padding: 10px;    
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px var(--rich-black);
+    font-size:medium;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--coffee-with-cream);
+  height: 378px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  color: var(--rich-black);
+}
+
+main h2 {
+  font-size: 1.15em;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.activities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.activities a, .activities a:visited {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+}
+
+.activities a:hover {
+  background-color: hsl(21, 31%, 60%);
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  text-align: center;
+  margin: 0 15px;
+  width: 198px;
+  height: 227px;
+  padding: 10px 0 0 0;
+}
+
+
+
+.activity > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.activity h3 {
+  font-size:.9em;
+  margin: 15px 0 0 0;
+}
+
+.activity p {
+  font-size: .7em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--battleship-gray);
+  height: 394px;
+}
+
+footer > a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;  
+  background-color: rgba(45, 65, 50, 1);
+  color: var(--beige);  
+  border-radius: 10px;
+  box-shadow: 0px 6px 6px var(--rich-black) ;
+}
+
+footer > a:hover {
+  background-color:  hsl(136, 19%, 16%);
+}
+
+.card {
+  width: 400px;
+  height: 294px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 180px;
+  height: 250px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.card-bio {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.card-bio h2 {
+  font-size: 1.2em;
+}
+
+.card-bio h3 {
+  font-size: .9em;
+}
+
+.card-bio p {
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
