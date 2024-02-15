@@ -3,14 +3,16 @@
     --beige: #F7F9E6ff;
     --charcoal: #494F5Eff;
     --coffee: #7D5742ff;
+    --coffee-milk: hsl(21, 31%, 60%);
     --coffee-with-cream: rgb(246, 208, 176);
     --rich-black: #0B091Bff;
     --battleship-gray: #7F888Bff;
     --battleship-gray-transparent: #7F888B99;
     --coffee-transparent: #7D5742aa;
     --rich-black-shadow: #0B091B33;
+    --forest-green: rgba(45, 65, 50, 1);
+    --forest-green-transparent: rgba(45, 65, 50, 0.758);
     font-family: 'Roboto', sans-serif;
-
 }
 
 html {
@@ -45,12 +47,11 @@ header {
 }
 
 header > h1 {
-    background-color: rgba(45, 65, 50, 0.758);
+    background-color: var(--forest-green-transparent);
     color: var(--beige);
     padding: 10px;    
     border-radius: 10px;
     box-shadow: 3px 3px 10px var(--rich-black);
-
 }
 
 header > h2 {
@@ -60,7 +61,6 @@ header > h2 {
     border-radius: 10px;
     box-shadow: 3px 3px 10px var(--rich-black);
     font-size:medium;
-
 }
 
 main {
@@ -93,7 +93,7 @@ main h2 {
 }
 
 .activities a:hover {
-  background-color: hsl(21, 31%, 60%);
+  background-color: var(--coffee-milk);
 }
 
 .activity {
@@ -107,8 +107,6 @@ main h2 {
   height: 227px;
   padding: 10px 0 0 0;
 }
-
-
 
 .activity > img {
   width: 100px;
@@ -138,7 +136,7 @@ footer > a {
   cursor: pointer;
   display: inline-block;
   position: relative;  
-  background-color: rgba(45, 65, 50, 1);
+  background-color: var(--forest-green);
   color: var(--beige);  
   border-radius: 10px;
   box-shadow: 0px 6px 6px var(--rich-black) ;
@@ -183,7 +181,6 @@ footer > a:hover {
   font-style: italic;
   font-size: 0.7em;
 }
-
 
 .roboto-thin {
     font-family: "Roboto", sans-serif;
